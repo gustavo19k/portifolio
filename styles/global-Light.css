@@ -1,0 +1,68 @@
+@import url('./button-mobile.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./backgroundOverlay.css');
+@import url('./buttonSwitchTheme.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-menu: rgba(71, 71, 71, 0.932);
+    --background: #ECECEC;
+    --background-alt: #d3d3d3;
+    --font: #040600;
+    --sub-Font: #222222;
+    --description-Font: #dddddd;
+    --contrast: #00008B;
+    --mainColor: #0c63ed;
+    --focusColor: #9f3a2c;
+    --subColor: #a33c00;
+    --text: #EDF1F7;
+    --red: #C51212;
+    --blue: #0041C2;
+    --green: #14B02D;
+    --yellow: #ffc12b;
+}
+
+
+
+body.light {
+    background-color: var(--background);
+    transition: background 0.2s linear;
+}
+
+
+.text,
+i {
+    color: var(--font);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media(max-width: 500px) {
+    #app {
+        padding: 0 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--contrast); */
+}

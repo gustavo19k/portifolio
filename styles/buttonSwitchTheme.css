@@ -1,0 +1,48 @@
+/* .toggle-button {
+    background-color: #254868;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+} */
+
+.toggle-button .icon {
+    font-size: 12px;
+}
+
+.toggle-button .text {
+    font-size: 12px;
+}
+
+.toggle-button>div>i {
+    margin-right: 5px;
+}
+
+.toggle-button>div {
+    padding: 10px 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.2s linear;
+
+}
+
+
+.toggle-button>div>i {
+    margin-right: 5px;
+}
+
+
+.toggle-button>div {
+    padding: 10px 20px;
+}
