@@ -28,89 +28,91 @@
   <div id="app">
 
     <header>
-      <div class="logo">
-        <h1>Gustavo Silva</h1>
-        <a href="" class="link-Heading-Header">
-          <h4>Desenvolvedor Fullstack</h4>
-        </a>
-      </div>
-
-      <div class="navigation">
-        <ul class="navigation__links">
-          <li><a href="#" class="navigation__link">.Home</a></li>
-          <li><a href="#" class="navigation__link">.Sobre</a></li>
-          <li><a href="#" class="navigation__link">.Projetos</a></li>
-          <li><a href="#" class="navigation__link">.Contato</a></li>
-        </ul>
-
-        <div class="navigation__social">
-          <a href="" target="_blank" title="instagram"><img src="./assets/instagram.svg" alt=""></a>
-          <a href="" target="_blank" title="linkedin"><img src="./assets/linkedin.svg" alt=""></a>
-          <a href="" title="Twitter/X" target="_blank"><img src="./assets/x.svg" alt=""></a>
-          <a href="" target="_blank" title="github"><img src="./assets/github.svg" alt=""></a>
+      <div class="container">
+        <div class="logo">
+          <h1>Gustavo Silva</h1>
+          <a href="" class="link-Heading-Header">
+            <h4>Desenvolvedor Fullstack</h4>
+          </a>
         </div>
 
-        <div class="container-buttonSwitch">
-          <button id="toggleButton" class="toggle-button">
-            <i class="fas fa-sun icon"></i>
-            <span class="text">Light</span>
-          </button>
+        <div class="navigation">
+          <ul class="navigation__links">
+            <li><a href="#" class="navigation__link">.Home</a></li>
+            <li><a href="#" class="navigation__link">.Sobre</a></li>
+            <li><a href="#" class="navigation__link">.Projetos</a></li>
+            <li><a href="#" class="navigation__link">.Contato</a></li>
+          </ul>
+
+          <div class="navigation__social">
+            <a href="" target="_blank" title="instagram"><img src="./assets/instagram.svg" alt=""></a>
+            <a href="" target="_blank" title="linkedin"><img src="./assets/linkedin.svg" alt=""></a>
+            <a href="" title="Twitter/X" target="_blank"><img src="./assets/x.svg" alt=""></a>
+            <a href="" target="_blank" title="github"><img src="./assets/github.svg" alt=""></a>
+          </div>
+
+          <div class="container-buttonSwitch">
+            <button id="toggleButton" class="toggle-button">
+              <i class="fas fa-sun icon"></i>
+              <span class="text">Light</span>
+            </button>
+          </div>
         </div>
+
+        <button type="button" id="button" onclick="handleClick()" class="button__mobile" title="botão mobile">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-
-      <button type="button" id="button" onclick="handleClick()" class="button__mobile" title="botão mobile">
-        <span></span><span></span><span></span>
-      </button>
-
     </header>
 
     <main>
+      <div class="container">
+        <section class="profile" id="main-About-Profile">
+          <img src="public/images/me.jpeg" class="profile-pic" alt="">
+          <h1 id="heading-Main">Gustavo Silva</h1>
+          <p class="paragraph-Main">Desenvolvedor Javascript</p>
+        </section>
 
-      <section class="profile" id="main-About-Profile">
-        <img src="public/images/me.jpeg" class="profile-pic" alt="">
-        <h1 id="heading-Main">Gustavo Silva</h1>
-        <p class="paragraph-Main">Desenvolvedor Javascript</p>
-      </section>
+        <section id="main-Projects">
 
-      <section id="main-Projects">
-
-        <a class="hyperlink-Project" href="https://gustavo19k.github.io/1o-projeto-web/" target="_blank">
-          <div class="project">
-            <h3 class="project-Heading">Neon Genesis Evangelion — Fan page</h3>
-            <p class="project-paragraph">Um site completo feito para descrever a Saga de Filmes e Animes
-              Evangelion. </p>
-            <div class="stack-Tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+          <a class="hyperlink-Project" href="https://gustavo19k.github.io/1o-projeto-web/" target="_blank">
+            <div class="project">
+              <h3 class="project-Heading">Neon Genesis Evangelion — Fan page</h3>
+              <p class="project-paragraph">Um site completo feito para descrever a Saga de Filmes e Animes
+                Evangelion. </p>
+              <div class="stack-Tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a class="hyperlink-Project" href="" target="_blank">
-          <div class="project">
-            <h3 class="project-Heading">Projeto 2</h3>
-            <p class="project-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <div class="stack-Tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>Express</span>
+          <a class="hyperlink-Project" href="" target="_blank">
+            <div class="project">
+              <h3 class="project-Heading">Projeto 2</h3>
+              <p class="project-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <div class="stack-Tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a class="hyperlink-Project" href="" target="_blank">
-          <div class="project">
-            <h3 class="project-Heading">Projeto 3</h3>
-            <p class="project-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <div class="stack-Tags">
-              <span>Python</span>
-              <span>Django</span>
-              <span>MongoDB</span>
+          <a class="hyperlink-Project" href="" target="_blank">
+            <div class="project">
+              <h3 class="project-Heading">Projeto 3</h3>
+              <p class="project-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <div class="stack-Tags">
+                <span>Python</span>
+                <span>Django</span>
+                <span>MongoDB</span>
+              </div>
             </div>
-          </div>
-      </section>
-
+          </a>
+        </section>
+      </div>
     </main>
 
     <footer>

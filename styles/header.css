@@ -1,12 +1,31 @@
+/* Defina um container centralizado */
+.container {
+  max-width: 1200px;
+  /* Ajuste conforme necessário */
+  margin: 0 auto;
+  padding: 0 20px;
+  /* Espaçamento lateral */
+  box-sizing: border-box;
+  /* Inclui padding no cálculo da largura */
+}
+
+/* Estilos para o header */
 #app header {
   height: 70px;
-  width: 100vw;
+  width: 100%;
   background-color: var(--background-alt);
   display: flex;
   align-items: center;
   justify-content: space-between;
   column-gap: 64px;
   font: 700 1rem "Karla";
+}
+
+#app header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
@@ -30,26 +49,29 @@
   display: flex;
   align-items: center;
   flex: 1;
-
+  justify-content: flex-end;
 }
 
 .navigation__links {
   display: flex;
   align-items: center;
-  column-gap: 48px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  column-gap: 0.75rem;
   list-style: none;
-  margin: 12px 12px 12px 12px;
   order: 2;
+  /* Garante que os links fiquem no final */
+  margin: 0;
+  /* Remove margens adicionais */
 }
 
 .navigation__link {
   color: var(--subColor);
   position: relative;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   text-decoration: none;
   letter-spacing: 2px;
-
 }
 
 .navigation__link::before {
@@ -69,15 +91,16 @@
   color: var(--sub-Font);
 }
 
-.navigation__social {
-  display: none;
-  height: 48px;
-}
-
 .navigation__link:hover::before {
   transform: scaleX(1);
   transform-origin: left;
   transition: transform .8s;
+}
+
+.navigation__social {
+  display: none;
+  /* Hide social icons in desktop mode */
+  height: 48px;
 }
 
 .navigation__social a {
@@ -94,6 +117,11 @@
 .navigation__social a {
   width: 20px;
   height: 20px;
+}
+
+.container-buttonSwitch {
+  margin-left: 20px;
+  /* Espaçamento entre os links de navegação e o botão de toggle */
 }
 
 @media(max-width: 900px) {
@@ -127,11 +155,13 @@
 
   .navigation__social {
     display: flex;
+    /* Show social icons in mobile mode */
     margin: 0;
     align-items: center;
     column-gap: 24px;
     justify-content: center;
     order: 1;
+    /* Ensures the social icons are before the links in mobile mode */
   }
 
   .navigation__social a {
@@ -139,4 +169,11 @@
     width: 24px;
     height: 24px;
   }
+}
+
+main .container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
